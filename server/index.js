@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+
 const app = express();
 const port = 3000;
 
@@ -14,5 +15,6 @@ app.get('/:courseNumber', (req, res) => {
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Proxy server listening at http://localhost:${port}`);
 });
