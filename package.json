@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "ingenuity-jsmith-proxy",
   "version": "",
   "description": "",
   "author": "",
@@ -8,7 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "run": "nodemon"
+    "start": "nodemon server/index.js"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
