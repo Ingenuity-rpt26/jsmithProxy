@@ -348,12 +348,11 @@ template {
   display: none;
 }
 
-
 #navbar {
   line-height: 75px;
   color: rgb(31, 31, 31);
   width: 100%;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .sticky {
