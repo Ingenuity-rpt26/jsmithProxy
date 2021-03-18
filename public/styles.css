@@ -71,6 +71,8 @@ pre {
 
 /**
  * Remove the gray background on active links in IE 10.
+
+DISABLED, BG COLOR OF NAVBAR NEEDS TO BE WHITE
  */
 
 /* a {
@@ -362,7 +364,7 @@ template {
 }
 
 a:-webkit-any-link {
-  color: green;
+  color: rgb(31, 31, 31);
 }
 
 #about {
