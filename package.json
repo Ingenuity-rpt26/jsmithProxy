@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "ingenuity-jsmith-proxy",
   "version": "",
   "description": "",
   "author": "",
@@ -8,9 +8,10 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "run": "nodemon"
+    "start": "nodemon server/index.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
