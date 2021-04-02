@@ -1,15 +1,14 @@
 /* eslint-disable no-undef */
 const navbar = document.getElementById('navbar');
-let sticky;
-let gotOffset = false;
+let initialPosition;
+
+// waits for page to be completely rendered prior to setting initialPosition
+window.onload = () => {
+  initialPosition = navbar.offsetTop;
+};
 
 const grabNavbar = () => {
-  const offset = window.pageYOffset;
-  if (!gotOffset) {
-    sticky = navbar.offsetTop;
-    gotOffset = true;
-  }
-  if (offset >= sticky) {
+  if (window.pageYOffset >= initialPosition) {
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');
