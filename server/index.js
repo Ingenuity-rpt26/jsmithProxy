@@ -14,7 +14,7 @@ app.get('/navbar.js', (req, res) => {
 });
 
 app.get('/:courseNumber', (req, res) => {
-  res.sendFile(path.resolve('./jsmithProxy/public/index.html'));
+  res.sendFile(path.resolve('./public/index.html'));
 });
 
 app.listen(port, () => {
