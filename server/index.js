@@ -9,8 +9,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+app.get('/navbar.js', (req, res) => {
+  res.sendFile(path.resolve('./jsmithProxy/public/navbar.js'));
+});
+
 app.get('/:courseNumber', (req, res) => {
-  res.sendFile(path.resolve('./public/index.html'));
+  res.sendFile(path.resolve('./jsmithProxy/public/index.html'));
 });
 
 app.listen(port, () => {
