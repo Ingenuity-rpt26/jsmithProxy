@@ -1,8 +1,17 @@
 #navbar {
   line-height: 75px;
+  width: 75%;
   color: rgb(31, 31, 31);
   width: 100%;
   background-color: white;
+  font-family: "OpenSans", "Arial", "sans-serif";
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#navbar :hover {
+  text-decoration: underline;
 }
 
 .sticky {
@@ -12,7 +21,16 @@
 }
 
 a:-webkit-any-link {
-  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+
+.blue {
+  color: rgb(42,115,204);
+  font-weight: bold;
+}
+
+.gray {
+  color: gray;
 }
 
 #about {
