@@ -38,6 +38,8 @@ const grabNavbar = () => {
     initialPosition.faq = faq.offsetTop;
   }
   const offset = window.pageYOffset;
+  console.log('offset: ', offset);
+  console.log('navbarOffset: ', initialPosition.navbar);
   // for sticky functionality
   if (offset >= initialPosition.navbar) {
     navbar.classList.add('sticky');
