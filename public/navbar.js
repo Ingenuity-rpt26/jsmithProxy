@@ -28,18 +28,8 @@ window.onload = () => {
 };
 
 const grabNavbar = () => {
-  if (initialPosition.syllabus !== document.getElementById('syllabus').offsetTop) {
-    initialPosition.navbar = navbar.offsetTop;
-    initialPosition.about = about.offsetTop;
-    initialPosition.instructors = instructors.offsetTop;
-    initialPosition.syllabus = syllabus.offsetTop;
-    initialPosition.reviews = reviews.offsetTop;
-    initialPosition.enrollmentOptions = enrollmentOptions.offsetTop;
-    initialPosition.faq = faq.offsetTop;
-  }
   const offset = window.pageYOffset;
-  console.log('offset: ', offset);
-  console.log('navbarOffset: ', initialPosition.navbar);
+
   // for sticky functionality
   if (offset >= initialPosition.navbar) {
     navbar.classList.add('sticky');
