@@ -14,8 +14,12 @@ app.get('/navbar.js', (req, res) => {
   res.sendFile(path.resolve('./jsmithProxy/public/navbar.js'));
 });
 
+app.get('style.css', (req, res) => {
+  res.sendFile(path.resolve('./jsmithProxy/public/style.css'));
+});
+
 app.get('/:courseNumber', (req, res) => {
-  res.sendFile(path.resolve('./public/index.html'));
+  res.sendFile(path.resolve('./jsmithProxy/public/index.html'));
 });
 
 app.listen(port, () => {
