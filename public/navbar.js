@@ -29,7 +29,8 @@ window.onload = () => {
 
 const grabNavbar = () => {
   const offset = window.pageYOffset;
-
+  console.log('offset: ', offset);
+  console.log('instructors initial position: ', initialPosition.instructors - 150);
   // for sticky functionality
   if (offset >= initialPosition.navbar) {
     navbar.classList.add('sticky');
@@ -37,7 +38,7 @@ const grabNavbar = () => {
     navbar.classList.remove('sticky');
   }
   // for about
-  if (offset >= initialPosition.about && offset < initialPosition.instructors) {
+  if (offset >= initialPosition.about - 115 && offset < initialPosition.instructors - 150) {
     idLocators.about.classList.remove('gray');
     idLocators.about.classList.add('blue');
   } else {
@@ -45,7 +46,7 @@ const grabNavbar = () => {
     idLocators.about.classList.add('gray');
   }
   // for instructors
-  if (offset >= initialPosition.instructors && offset < initialPosition.syllabus) {
+  if (offset >= initialPosition.instructors - 150 && offset < initialPosition.syllabus - 150) {
     idLocators.instructors.classList.remove('gray');
     idLocators.instructors.classList.add('blue');
   } else {
@@ -53,7 +54,7 @@ const grabNavbar = () => {
     idLocators.instructors.classList.add('gray');
   }
   // for syllabus
-  if (offset >= initialPosition.syllabus && offset < initialPosition.reviews) {
+  if (offset >= initialPosition.syllabus - 150 && offset < initialPosition.reviews - 150) {
     idLocators.syllabus.classList.remove('gray');
     idLocators.syllabus.classList.add('blue');
   } else {
@@ -61,7 +62,7 @@ const grabNavbar = () => {
     idLocators.syllabus.classList.add('gray');
   }
   // for reviews
-  if (offset >= initialPosition.reviews && offset < initialPosition.enrollmentOptions) {
+  if (offset >= initialPosition.reviews - 150 && offset < initialPosition.enrollmentOptions - 150) {
     idLocators.reviews.classList.remove('gray');
     idLocators.reviews.classList.add('blue');
   } else {
@@ -69,7 +70,7 @@ const grabNavbar = () => {
     idLocators.reviews.classList.add('gray');
   }
   // for enrollment options
-  if (offset >= initialPosition.enrollmentOptions && offset < initialPosition.faq) {
+  if (offset >= initialPosition.enrollmentOptions && offset < initialPosition.faq - 150) {
     idLocators.enrollmentOptions.classList.remove('gray');
     idLocators.enrollmentOptions.classList.add('blue');
   } else {
