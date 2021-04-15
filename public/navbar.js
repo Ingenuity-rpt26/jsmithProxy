@@ -29,8 +29,7 @@ window.onload = () => {
 
 const grabNavbar = () => {
   const offset = window.pageYOffset;
-  console.log('offset: ', offset);
-  console.log('instructors initial position: ', initialPosition.instructors - 150);
+
   // for sticky functionality
   if (offset >= initialPosition.navbar) {
     navbar.classList.add('sticky');
