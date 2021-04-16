@@ -3,15 +3,54 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="http://3.140.219.139">
-  <link rel="preconnect" href="http://3.20.191.60:3002">
+  <link rel="preconnect" href="http://3.20.191.60">
   <link rel="preconnect" href="http://54.176.19.199:3003">
   <link rel="preconnect" href="http://54.176.19.199:3005">
   <link rel="preconnect" href="http://18.221.221.55">
   <link rel="preconnect" href="http://3.140.219.139">
-  <link defer href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="http://54.67.93.84">
   <base href="http://54.67.93.84"></base>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
   <meta charset="utf-8">
+  <style>
+    #navbar {
+  line-height: 75px;
+  color: rgb(31, 31, 31);
+  width: 100%;
+  background-color: white;
+  font-family: "OpenSans", "Arial", "sans-serif";
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#navbar :hover {
+  text-decoration: underline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.blue {
+  color: rgb(42,115,204);
+  font-weight: bold;
+}
+
+.gray {
+  color: gray;
+}
+
+#about {
+  margin-top: 100px;
+}
+  </style>
 </head>
 
 <header>
@@ -36,10 +75,11 @@
   <div id="reviews"></div>
   <div id="enrollment"></div>
   <div id="faq"></div>
-  <script src="http://3.140.219.139/bundle.js"></script>
-  <script src="http://3.20.191.60:3002/bundle.js"></script>
-  <script src="http://54.176.19.199:3003/bundle.js"></script>
   <script src="http://54.176.19.199:3005/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="http://3.20.191.60/bundle.js"></script>
+  <script src="http://54.176.19.199:3003/bundle.js"></script>
+  <script src="http://3.140.219.139/bundle.js"></script>
   <script src="http://3.139.47.159/bundle.js"></script>
   <script defer src="./navbar.js"></script>
 </body>
